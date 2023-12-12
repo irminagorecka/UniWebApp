@@ -1,0 +1,815 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <!-- Bootstrapowe: -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+    <!--<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />-->
+
+    <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <title>Gabinet masażu Marta Binięda</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Zalinkowanie stylów CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link href="headers.css" rel="stylesheet" />
+
+    <!-- Dodanie GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Parisienne&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <!-- Zdjecie glowne
+    <div class="col-12">
+      <img src="pasek.png" width=100% class="img-fluid" />
+    </div>-->
+
+    <div class="container">
+      <!-- Logo-->
+      <div class="mb-5 mt-2 kontener">
+        <b
+          ><h1 class="naglowek o_nas mt-5 mb-3 font_tytul text-center">
+            Gabinet masażu Marta Binięda
+          </h1>
+          <h2 class="naglowek o_nas font_tytul">Oddaj się chwili relaksu</h2></b
+        >
+      </div>
+
+      <!-- Menu-->
+      <nav class="navbar navbar-expand-lg navbar-light kontener">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse stop"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active pogrubienie menu_rozmiar"
+                  aria-current="page"
+                  href="#o_mnie"
+                  >O mnie</a
+                >
+              </li>
+              <!-- Dropdown-->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link pogrubienie menu_rozmiar dropdown-toggle"
+                  href="#m_twarzy"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Masaże twarzy
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item bg-light" href="#kobido"
+                      >Japoński masaż liftingujący</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bg-light" href="#klas_tw"
+                      >Masaż klasyczny twarzy</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bg-light" href="#gua"
+                      >Masaż płytką Gua Sha</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bg-light" href="#banka"
+                      >Masaż bańką</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pogrubienie menu_rozmiar" href="#facetaping"
+                  >Facetaping</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pogrubienie menu_rozmiar" href="#klasyczny"
+                  >Masaż klasyczny</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link pogrubienie menu_rozmiar dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Masaże relaksacyjne
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item bg-light" href="#olejki"
+                      >Gorącymi olejkami</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bg-light" href="#kamienie"
+                      >Gorącymi kamieniami</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link pogrubienie menu_rozmiar dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Masaże antycellulitowe
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item bg-light" href="#rytulal"
+                      >Kompleksowy rytułał antycellulitowy</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bg-light" href="#miod"
+                      >Oczyszczający masaż miodem</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bg-light" href="#banka_cialo"
+                      >Masaż bańką chińską</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item bg-light" href="#lod"
+                      >Masaż kostką lodu</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pogrubienie menu_rozmiar" href="#drenaz"
+                  >Drenaż limfatyczny</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pogrubienie menu_rozmiar" href="#kontakt"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- O nas -->
+      <section class="jumpers o_nas kontener">
+        <div class="row">
+          <div class="col-12 text-center mt-3">
+            <h2 class="h text-secondary naglowek" id="o_mnie">O mnie</h2>
+            <div class="border-bottom mb-3"></div>
+            <p>
+              Jestem dyplomowanym Technikiem masażystą oraz ukończyłam szkolenia
+              z zakresu masaży twarzy takie jak: Japoński masaż liftingujący,
+              Facetaping estetyczny, Kobido Basic. Dodatkowo, wciąż się rozwijam
+              i planuję kolejne.Moim ulubionym przedmiotem w trakcie trwania
+              nauki była Odnowa biologiczna, dzięki której nabyłam umiejętności
+              wykonywania szeregu zabiegów na twarz i ciało. Największym
+              zainteresowaniem darzę masaże twarzy i wiele zabiegów
+              relaksacyjnych, takich jak masaż gorącymi kamieniami, gorącymi
+              olejkami, świecą i wiele innych.
+            </p>
+          </div>
+        </div>
+        <div class="border-bottom mb-3"></div>
+        <!-- Gallery -->
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <figure>
+                        <a href="~/images/cert2.jpg">
+                <img
+                  src="~/images/cert2.jpg"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                  alt=""
+                  href="#cert2.jpg"
+                />
+              </a>
+            </figure>
+            
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <figure>
+                        <a href="~/images/cert4.jpg"><img src="~/images/cert4.jpg"
+                  class="w-100 shadow-1-strong img-thumbnail rounded mb-4"
+                  alt=""
+              /></a>
+            </figure>
+            
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <figure>
+                        <a href="~/images/cert3.jpg"><img
+                  src="~/images/cert3.jpg"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                  alt=""
+              /></a>
+            </figure>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Zabiegi -->
+      <section class="o_nas border-bottom kontener">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="h text-dark naglowek o_nas">Zabiegi</h2>
+            <div class="border-bottom mb-3"></div>
+            <p>
+              Jeśli marzysz o błogim odprężeniu bądź potrzebujesz rozluźnić
+              spiete mięśnie, moje zabiegi będą dla Ciebie idealne. Wykonuję
+              różnorodne masaże - relaksacyjne jak również masaż klasyczny.
+            </p>
+            <p>
+              Jest tu miejsce dla każdego, kto pragnie odmłodzić wygląd swojej
+              twarzy, dodać kolorytu i wygładzić zmarszczki przy manualnym
+              masażu twarzy jakim jest Japoński masaz liftingujący Kobido,
+              dający spektakularne efekty. Jeśli dbamy o estetykę twarzy warto
+              pamiętać także o ciele, czego również u mnie nie brakuje. Z pomocą
+              przyjdą masaże antycellulitowe takie jak: masaż bańką chińską,
+              masaż miodem bądź kompleksowy rytuał antycellulitowy składający
+              się z czterech elementów.
+            </p>
+            <p>
+              Oferty masażowe, wedle życzenia, można wzbogacić o różnego rodzaju
+              sprzęty, takie jak mata grzewcza, elektryczny masażer karku bądź
+              dodatkowy masaż wykonany pistoletem do masażu. Można poddać się
+              drenażowi limfatycznemu kończyn dolnych wykonanych przez specjalne
+              urządzenie, a także skorzystać z zalet Facetapingu estetycznego.
+            </p>
+            <div class="border-bottom"></div>
+          </div>
+
+          <div class="col-12 mb-5 naglowek">
+            <h3 class="h text-dark" id="m_twarzy">Masaże twarzy</h3>
+
+            <div class="col-12 mb-5 naglowek">
+              <h4 class="h text-dark" id="kobido">
+                Japoński masaż liftingujący KOBIDO
+              </h4>
+              <p>
+                Japoński masaż liftingujący to całkowicie naturalna i
+                nieinwazyjna metoda liftingu. Pomaga w utrzymaniu lub
+                przywróceniu harmonii organizmu i naturalnego piękna. Techniki
+                bazowane na dalekowschodnich metodach masazu: praca na punktach
+                biologicznie aktywnych, drenaż limfatyczny i intensywna część
+                masazu przeciwzmarszczkowego. Masaż wprowadza cały organizm w
+                stan równowagi i regeneracji. Na poziomie komórkowym skóra
+                wytwarza więcej nowego kolagenu i elastyny, co przywraca jej
+                jędrność. Japoński lifting twarzy poprawia ukrwienie skóry i
+                krążenie limfy, co pozwala na lepsze jej odżywienie i
+                dotlenienie więc niweluje obrzęki i opuchnięciaia pod oczami.
+                Wykonanie serii masaży daje efekty porównywalne z tradycyjnym,
+                chirurgicznym liftingiem twarzy. A przy tym jest zabiegiem
+                nieinwazyjnym i bezpiecznym. Dodatkową korzyścią japońskiego
+                masażu twarzy jest też stan głębokiego relaksu, jaki osiągamy
+                podczas zabiegu. Jest doskonałą propozycją dla osób, które
+                oprócz wyraźnego odmłodzenia twarzy pragną także zredukować
+                stres i zadbać o zdrowie całego organizmu.
+              </p>
+              <div class="border-bottom mb-3"></div>
+              <div class="row">
+                <div class="col-6 mb-5 mt-2 naglowek">
+                  <h6>Wskazania</h6>
+                  <ul class="ul">
+                    <li>Nieinwazyjny, naturalny lifting twarzy</li>
+                    <li>Modelowanie owalu twarzy</li>
+                    <li>Zmarszczki i bruzdy</li>
+                    <li>Szara i zmęczona cera</li>
+                    <li>Wiotka, mało jędrna skóra</li>
+                    <li>Opuchlizna i obrzęki twarzy</li>
+                    <li>Przebarwienia</li>
+                    <li>Redukcja stresu</li>
+                  </ul>
+                </div>
+                <div class="col-6 mt-2 naglowek">
+                  <h6>Przeciwwskazania</h6>
+                  <ul class="ul">
+                    <li>Stany zapalne skóry</li>
+                    <li>Świeże niezagojone rany i blizny</li>
+                    <li>Złote nici</li>
+                    <li>
+                      Botoks/wypełniacze (3-4 tygodnie po zabiegu można wykonać
+                      masaż)
+                    </li>
+                    <li>
+                      Guzki w obrębie węzłów chłonnych, zapalenie migdałków
+                    </li>
+                    <li>Wysokie nadciśnienie tętnicze</li>
+                    <li>Świeże usunięcie zęba, zmiany ropne okolozebowe</li>
+                    <li>Zaawansowana miażdżyca naczyń</li>
+                  </ul>
+                </div>
+                <div class="border-bottom mb-3"></div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <img
+                    class="img-fluid rounded"
+                    src="kobidoprzemek.jpg"
+                    alt="Kobido"
+                  />
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <img
+                    class="img-fluid rounded"
+                    src="kobidoefekt.jpeg"
+                    alt="Kobido"
+                  />
+                </div>
+              </div>
+              <div class="border-bottom"></div>
+              <p>Czas trwania: 60min – Cena: 180zł</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 mb-md-2 mb-5 mt-2 naglowek">
+                <h4 class="h text-dark" id="klas_tw">Masaż klasyczny twarzy</h4>
+                <p>
+                  Masaż klasyczny twarzy, wykonujemy na odpowiednim kremie,
+                  olejku bądź innym preparacie przeznaczonym odpowiednio do
+                  cery. Składa się on z etapów, które występują również w masażu
+                  klasycznym ciała: głaskania, rozcierania, ugniatania,
+                  delikatne oklepywanie, wibracja. Zabieg pobudza mikrokrążenie
+                  w skórze, dzięki czemu jest ona bardziej dotleniona. Dla celi
+                  relaksacyjnych ten masaż możemy połączyć z innymi zabiegami
+                  pielęgnacyjnymi na twarz.
+                </p>
+                <div class="border-bottom"></div>
+                <p>Czas trwania: 30min – Cena: 60zł</p>
+              </div>
+              <div class="col-lg-4 mt-md-1 mt-2 naglowek">
+                <h4 class="h text-dark" id="gua">Masaż płytką Gua Sha</h4>
+                <p>
+                  Masaż Gua sha to zabieg, który możemy wykonać również w domu.
+                  Gua sha wywodzi się z tradycji chińskiej. Masażer wykonany
+                  jest z naturalnych surowców, najczęściej jadeitu lub różowego
+                  kwarcu. Posiada przeróżne kształty, w większości jednak
+                  przypominają one serce. Masaż Gua sha pobudza doskonale
+                  przepływ krwi i limfy. Zatem niwelujemy obrzęki oraz
+                  opuchnięcia w okolicy twarzy, szyi i dekoltu. Rozpoczyna się
+                  od rozluźnienia karku, ramion oraz czepca. W kolejnej fazie
+                  wykonywane są ruchy kamieniem w kierunku węzłów chłonnych. Gua
+                  Sha wykorzystuje również elementy akupresury. Ruchy w części
+                  liftingującej wykonywane są ku górze, tak aby działać
+                  przeciwko grawitacji. Ruchy dobierane są indywidualnie do
+                  odczuć klienta.
+                </p>
+                <div class="border-bottom"></div>
+                <p>Czas trwania: 30min – Cena: 60zł</p>
+              </div>
+              <div class="col-lg-4 mb-md-1 mb-5 mt-2 naglowek">
+                <h4 class="h text-dark" id="banka ">Masaż bańką</h4>
+                <p>
+                  Masaż twarzy bańką chińską, inaczej facial cupping, to jeden z
+                  najpopularniejszych zabiegów w obecnych czasach, który wywodzi
+                  się on z tradycyjnej medycyny chińskiej i stosowany jest po
+                  dziś dzień. W celu wykonania masażu twarzy używa się baniek
+                  silikonowych z miękkiego materiału o małej średnicy. Za ich
+                  pomocą możemy ujędrnić i odmłodzić skórę twarzy oraz poprawić
+                  przepływ limfy. Widoczne efekty są już po pierwszym zabiegu,
+                  jednak w celu osiągnięcia zamierzonego efektu, należy
+                  wykonywać masaż twarzy systematycznie.
+                </p>
+                <div class="border-bottom"></div>
+                <p>Czas trwania: 30min – Cena: 60zł</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 naglowek mb-5">
+            <h3 class="h text-dark" id="facetaping">Facetaping</h3>
+            <p>
+              Taping twarzy to technika rozluźniania mięśni przy pomocy
+              specjalnych taśm do kinesiotapingu. Ich celem jest relaksacja
+              spiętych mięśni i wygładzenie zmarszczek.To terapia powięziowa,
+              która polega na czasowym oklejeniu twarzy taśmami do
+              kinesiotapingu. Ich zadanie to też obniżenie napięcia
+              powierzchniowego, rozluźnienie mięśni i przywróceniu skórze
+              elastyczności. Dokladniej: podnoszą owal twarzy, redukują drugi
+              podbródek, lwią zmarszczkę i bruzdy nosowo-wargowe, wspomagając
+              pracę mięśni i przywracając im odpowiedni tonus. Umożliwiają
+              lepsze dotlenienienie tkanek, poprawe mikrokrążenie krwi i
+              przepływ limfy a więc usuwają obrzęki i zasinienia.
+            </p>
+            <div class="border-bottom"></div>
+            <p>
+              Dodatkowo do masażu twarzy | Cena: 15-30zł w zależności od ilości
+              taśm
+            </p>
+          </div>
+          <div class="col-12 naglowek mb-5">
+            <h3 class="h text-dark" id="klasyczny">Masaż klasyczny</h3>
+            <p>
+              Masaż klasyczny to najpopularniejsza forma masażu. Wykorzystuje
+              się w nim indywidulanie dobraną do klienta siłę nacisku na
+              mięśnie, przy użyciu dłoni, przedramion oraz łokci. Rozluźnia
+              napięte mięśnie, poprawia przepływ krwi, zwiększa elastyczność
+              mięśni i zakres ruchomości oraz zmniejsza odczucia bólowe. Zaletą
+              jest jego pozytywnie wpływa na samopoczucie i stan emocjonalny
+              pacjenta, redukując stres i zwiększając wydzielanie endorfin. Ten
+              rodzaj masażu szczególnie polecany jest dla tych osób, które chcą
+              poprawić swoje zdrowie fizyczne lub psychiczne.
+            </p>
+            <div class="border-bottom"></div>
+            <p>Czas trwania: 60min – Cena: 120zł | 30min – 70zł</p>
+          </div>
+          <div class="col-12 mb-5 naglowek">
+            <h3 class="h text-dark">Masaż relaksacyjny</h3>
+            <p>
+              Masaż relaksacyjny jest odmianą masażu klasycznego. Jednak
+              znacznie łagodniejszą i płynniejszą. Skupia się na redukowaniu
+              napięć mięśniowych, odprężaniu całego ciała, eliminowaniu bólu
+              pleców, szyi, karku, czy barków, poprawie krążenia i przepływu
+              limfy a zwłaszcza na wyciszaniu emocjonalnym osoby masowanej.
+              Masaże relaksacyjne są wykonywane na całym ciele lub też na
+              poszczególnych jego częściach, np. wyłącznie na plecach. Masaż
+              relaksacyjny można polecić każdemu. To bezpieczny, łagodny rodzaj
+              masażu, który wspaniale relaksuje, wycisza skołatane nerwy, usuwa
+              napięcie z mięśni, zwalcza dolegliwości bólowe, stres, itp. Z
+              masażu relaksacyjnego korzystają też osoby, które są przemęczone,
+              mają problemy ze snem, brakuje im energii, są obciążone
+              przewlekłym stresem, czy mają problem z nadpobudliwością.
+              Przeciwwskazania do masażu to: gorączka, choroba nowotworowa,
+              stany zapalne skóry, schorzenia układu krążenia, hemofilia,
+              nadciśnienie tętnicze, choroba żył, skłonność do występowania
+              krwotoków, niedawno przebyte złamania, zwichnięcia czy skręcenia
+              kości i stawów.
+            </p>
+            <div class="border-bottom"></div>
+            <div class="row">
+              <div class="col-lg-6 mb-md-1 mb-sm-1 mb-xs-1 mb-5 mt-3 naglowek">
+                <h4 class="h text-dark" id="olejki">Masaż olejkami</h4>
+                <p>
+                  Masaż ciepłymi olejkami jest szczególnie polecany osobom
+                  żyjącym w ciągłym stresie. Polega na wykonaniu spokojnych i
+                  płynnych ruchów. Wspaniale oddziałuje na układ nerwowy –
+                  likwiduje napięcie mięśni, przywraca prawidłowy rytm serca,
+                  właściwe krążenie i ciśnienie krwi, a nawet pomaga w walce z
+                  bezsennością oraz z ogólnym wycieńczeniem. Kontakt ciepłych
+                  olejków z zakończeniami nerwowymi w skórze powoduje
+                  natychmiastową reakcję systemu nerwowego i najbardziej
+                  pożądany efekt relaksu i odprężenia. Masaż oczyszcza organizm,
+                  przywraca naturalną harmonię ciała, zapewnia głęboki relaks i
+                  wyciszenie. Celem masażu aromaterapeutycznego jest
+                  wprowadzenie do organizmu przez skórę leczniczych substancji
+                  zawartych w olejkach oraz poprawa krążenia krwi. Aromaterapia
+                  traktuje człowieka holistycznie, jej zabiegi mają na celu
+                  poprawę ogólnej kondycji organizmu człowieka poprzez
+                  przywrócenie mu równowagi i pobudzenie jego naturalnych sił
+                  odpornościowych. Olejek wybierany indywidulanie do potrzeb i
+                  upodobań klienta. Poza zapachem i odpowiednią muzyką, głębokie
+                  odprężenie daje podgrzanie wybranego olejku do odpowiedniej
+                  temperatury. Cieplo otula i zapewnia dodatkowy relaks.
+                </p>
+                <div class="border-bottom"></div>
+                <p>Czas trwania: 90min – Cena: 180zł | 60min - 150zl</p>
+              </div>
+              <div class="col-lg-6 mt-3 naglowek">
+                <h4 class="h text-dark" id="kamienie">
+                  Masaż gorącymi kamieniami
+                </h4>
+                <p>
+                  Masaż gorącymi kamieniami to bardzo relaksujący zabieg dla
+                  wszystkich miłośników błogiego odpoczynku. Bazaltowe kamienie
+                  pochodzenia wulkanicznego przewodzą wysokie i niskie
+                  temperatury, doskonale rozgrzewają i rozluźniają napięte
+                  mięśnie, pomagając uwolnić umysł i ciało od stresu.
+                  Temperatura kamieni używanych przy zabiegu jest dostosowywana
+                  do indywidualnych odczuć klienta i nie przekracza 60 stopni
+                  Celsjusza. Masażysta stopniowo przyzwyczaja skórę pacjenta do
+                  ciepła, rozgrzewając ciało technikami masażu relaksacyjnego
+                  (głaskanie, rozcieranie i ugniatanie, a ponadto odpowiednie
+                  układanie kamieni na poszczególnych odcinkach ciała),
+                  zmniejszając tym samym różnicę temperatur między ciałem a
+                  kamieniami. Masaż doskonale niweluje napięcia a do tego kojąco
+                  na ciało i umysł osoby masowanej działają także zapach olejków
+                  eterycznych oraz odpowiednia muzyka. Masaż ten to połączenie
+                  termoterapii, drenażu limfatycznego, akupresury i
+                  aromaterapii. Polecany jest dla osób, które zmagają się z
+                  chronicznym przemęczeniem, stresem i niepokojem. Świetnie
+                  sprawdzi się też w przypadku urazów sportowych,
+                  przetrenowania, obrzęków lub przewlekłego bólu. Dodatkowo
+                  pobudzony zostaje układ limfatyczny i krwionośny, dzięki czemu
+                  zabieg ten może być pomocny w ujędrnianiu i nawilżaniu skóry,
+                  a nawet redukcji cellulitu.
+                </p>
+                <div class="border-bottom"></div>
+                <p>Czas trwania: 60min – Cena: 150zł</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mb-5 naglowek">
+            <h3 class="h text-dark">Masaż antycellulitowy</h3>
+            <p>
+              W masazach antycellulitowych wykonywanie polega na wykorzystywaniu
+              dynamicznych, intensywnych i silnych ruchów podczas zabiegu. Pod
+              wpływem czego dochodzi do rozbicia podskórnej tkanki tłuszczowej,
+              detoksykacji organizmu oraz polepszenia ukrwienia skóry i mięśni.
+            </p>
+            <div class="border-bottom"></div>
+            <div class="row">
+              <div class="col-lg-6 mb-3 mt-3 naglowek">
+                <h4 class="h text-dark" id="rytulal">
+                  Kompleksowy rytułał antycellulitowy
+                </h4>
+                <p>
+                  Kompleksowy rytułał antycellulitowy to połączenie czterech
+                  masaży. W pierwszej fazie przygotowujemy ciało do dlaszych,
+                  intensywniejszych zabiegów masażem klasycznym. W drugiej fazie
+                  wykonujemy masaż bańką chińską. Trzecia faza to masaż
+                  izometryczny, który wymaga współpracy masażysty i klienta. Są
+                  to intensywne ruchy takie jak szybkie ugniatanie bądź
+                  oklepywanie masowanej części ciała przy napięciu mięśniowym ze
+                  strony osoby masowanej. Co zwiększa intensywność zabiegu i
+                  skuteczniej pomaga walczyć z cellulitem. Dla odważnych w tej
+                  fazie można wykonać również krótki masaż kostką lodu.
+                </p>
+                <div class="border-bottom"></div>
+                <p>Czas trwania: 60min – Cena: 150zł</p>
+              </div>
+
+              <div class="col-lg-6 mb-3 mt-3 naglowek">
+                <h4 class="h text-dark" id="miod">
+                  Oczyszczający masaż miodem
+                </h4>
+                <p>
+                  Masaż ciepłym miodem to połączenie działania masażu
+                  relaksującego i stymulacji pracy gruczołów potowych, która
+                  prowadzi do detoksykacji organizmu. Masaż poprawia sprawność
+                  układu krążenia, działa przeciwzapalnie i wspomaga naturalną
+                  odporność organizmu. Regeneruje po przemęczeniu i wyczerpaniu,
+                  odpręża i wycisza. Dodatkową zaletą jest redukcja cellulitu i
+                  minimalizacja blizn i rozstępów. Masaż rozpoczyna się od
+                  nałożenia podgrzanego do ok. 38 stopni płynnego miodu na
+                  ciało. Następnie jest on delikatnie wklepywany i wmasowywany w
+                  skórę. W wyniku oczyszczania się organizmu z toksyn miód staje
+                  się coraz ciemniejszy. Przeznaczony dla każdego kto chce
+                  zadbać o odporność swojego organizmu, pozbyć bóli
+                  napięciowych, nawilżyć przesuszoną skórę, oczyścić organizm,
+                  zredukować cellulit i blizny. Przeciwwskazania to oczywiście
+                  alergia na miód jak również kruchość naczyń, żylaki, choroby,
+                  nowotworowe, stany zapalne przebiegające z gorączką, ciąża,
+                  miażdżyca.
+                </p>
+                <div class="border-bottom"></div>
+                <p>Czas trwania: 30min – Cena: 60zł</p>
+              </div>
+            </div>
+            <div class="border-bottom mb-3"></div>
+            <div class="row">
+              <div class="col-lg-6 mt-1 naglowek">
+                <h4 class="h text-dark" id="banka_cialo">
+                  Masaż bańką chińską
+                </h4>
+                <p>
+                  Masaż bańką chińską opiera się na metodzie próżniowego
+                  zasysania skóry i tkanki podskórnej. Zabieg bańką wywodzi się
+                  z chińskiej medycyny naturalnej. Podciśnienie, które powstaje
+                  w bańce poprzez usunięcie z niej powietrza, powoduje zassanie
+                  skóry i tkanek leżących pod bańką, powodując intensywne
+                  przekrwienie oraz widoczną poprawę stanu skóry. Rozszerzenie
+                  naczyń krwionośnych i odpowiednie ukrwienie powoduje lepsze
+                  odżywienie tkanek, co zapobiega powstawaniu cellulitu. Podczas
+                  zabiegu dochodzi do przyspieszenia przemiany materii, co
+                  redukuje tkankę tłuszczową a także oczyszcza skórę z toksyn.
+                  Działa jako drenaż limfatyczny. Przynosi wyraźne efekty w
+                  krótkim czasie. Efekty masażu to: zmniejszenie obrzęków,
+                  redukcja tkanki tłuszczowej, redukcja cellulitu, poprawa
+                  krążenia, poprawa elastyczności i ujędrnienie. Do
+                  przeciwwskazań zalicza się: żylaki, stany gorączkowe,
+                  zaburzenia krzepliwości krwi, krwiaki, pękające naczynka,
+                  choroby skóry, choroby zakaźne, nowotwory, nadciśnienie
+                  tętnicze, menstruacje, ciążę.
+                </p>
+                <div class="border-bottom"></div>
+                <p>Czas trwania: 30min – Cena: 70zł</p>
+              </div>
+              <div class="col-lg-6 mt-1 naglowek">
+                <h4 class="h text-dark" id="lod">Masaż kostką lodu</h4>
+                <p>
+                  Masaż lodem świetnie sprawdzi się podczas terapii mających na
+                  celu poprawę wyglądu skóry, redukcję tkanki tłuszczowej oraz
+                  cellulitu, a także wzmocnienie naczyń krwionośnych. Masaż musi
+                  być wykonywany regularnie. Zabieg może być wykonywany u osób
+                  ze skłonnością do pojawiania się teleangiektazji, jednak
+                  należy zachować ostrożność. Masaż nie powinien być zbyt długi,
+                  nie należy go również wykonywać na rozgrzaną skórę (gwałtowne
+                  różnice temperatur mogą spowodować pękanie naczynek).
+                  Stosowany regularnie działa jak delikatna gimnastyka dla
+                  naczyń krwionośnych, dzięki czemu uelastycznia je i zapobiega
+                  pękaniu. Wskazaniem do wykonywania masażu lodem jest również
+                  cellulit. Stymulacja mikrokrążenia umożliwia resorpcję
+                  nadmiernej ilości płynu z przestrzeni międzykomórkowej do
+                  naczyń. Masaż lodem powoduje naprzemienny skurcz i rozkurcz
+                  naczyń włosowatych. Dzięki czemu poprawia się metabolizm
+                  komórek tłuszczowych, a w rezultacie dochodzi do zmniejszenia
+                  cellulitu. Poprawia mikrokrążenia miejsc objętych tzw.
+                  pomarańczową skórką, stymuluje miejscową przemianę materii i
+                  poprawia wygląd.
+                </p>
+                <div class="border-bottom"></div>
+                <p>Czas trwania: 30min – Cena: 60zł</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-5 naglowek">
+            <h3 class="h text-dark" id="drenaz">
+              Drenaż limfatyczny kończyn dolnych
+            </h3>
+            <p>
+              Działanie systemu Normatec jest oparte na technice
+              kompresoterapii. Jednostka sterująca pompuje powietrze do
+              poszczególnych komór powietrznych w rękawach, zapewniając
+              kończynom efekt kompresji. Jest to wysokiej jakości system
+              regeneracji mięśni, który wykorzystuje ciśnienie powietrza, aby
+              rozluźnić mięśnie i poprawić przepływ limfy. Dodatkowo aktywuje
+              ciało przed treningiem, natomiast po treningu pomaga je szybko
+              zregenerować. Działa poprzez pulsowanie i utrzymywanie powietrza w
+              każdej strefie. Sprzyja to zwiększonemu przepływowi limfy,
+              pomagając jednocześnie zmniejszyć ból i przyspieszyć powrót do
+              zdrowia. Szczególnie polecane jest to dla osób, które prowadzą
+              wymagający tryb życia lub przygotowują się do ciężkich zawodów
+              oraz dla osób cierpiących na zaburzenia układu krążenia.
+            </p>
+            <div class="border-bottom mb-4"></div>
+            <img
+              src="drenaz.jpg"
+              class="img-fluid rounded"
+              alt="Drenaż limfatyczny"
+            />
+            <div class="border-bottom mt-4"></div>
+            <p>Czas trwania: ?min – Cena: 60zł</p>
+          </div>
+        </div>
+        <!-- Kontakt -->
+        <div class="col-lg-12 naglowek o_nas">
+          <div class="border-bottom"></div>
+          <div class="border-bottom"></div>
+          <div class="border-bottom"></div>
+          <div class="border-bottom mb-5"></div>
+          <div class="row">
+            <div class="col-lg-3 mb-sm-3 naglowek">
+              <p id="kontakt" class="h">Adres</p>
+              <h6>ul. Relaksowa</h6>
+              <h6>20-819 Lublin</h6>
+              <h6 class="mt-4">Niezdów 10</h6>
+              <h6>24-300 Opole Lubelskie</h6>
+            </div>
+            <div class="col-lg-3 mb-sm-3">
+              <p class="h">Dane kontaktowe</p>
+              <h6>Tel: 538-114-179</h6>
+              <h6>E-mail: martabinieda8@gmail.com</h6>
+            </div>
+            <!--Formularz-->
+            <div class="col-lg-3 mb-sm-3">
+              <p class="h">Formularz kontaktowy</p>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First name"
+                aria-label="First name"
+              />
+
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Last name"
+                aria-label="Last name"
+              />
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail3"
+                placeholder="Email"
+                aria-label="Email"
+              />
+            </div>
+            <!--Google map
+            <div class="col-lg-6">
+              
+              <div
+                id="map-container-google-1"
+                class="z-depth-1-half map-container"
+                style="height: 500px"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2496.3680639211507!2d22.516419015761173!3d51.26754367959641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225992ddc22881%3A0xccd7a04b76d5bc6c!2sRelaksowa%206%2C%2020-819%20Lublin!5e0!3m2!1spl!2spl!4v1671132104543!5m2!1spl!2spl"
+                  width="500"
+                  height="300"
+                  class="img-fluid mr-md-3"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </section>
+      <div class="col-lg-12 text-center">
+        <p>Wykonanie Irmina Górecka E-mail: irmina.gorecka@gmail.com</p>
+      </div>
+    </div>
+
+    <!-- Bootstrapowe: -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Animacja 
+    <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal("o_nas border-bottom kontener", {
+        reset: true,
+        delay: 300,
+        distance: 0,
+      });
+      sr.reveal("col-12 naglowek o_nas", {
+        reset: true,
+        delay: 300,
+      });
+    </script>-->
+  </body>
+</html>
+
