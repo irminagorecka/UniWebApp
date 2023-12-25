@@ -16,10 +16,10 @@ namespace FirstWebApp.Pages
         }
 
         public void OnPost() { 
-            hasData = true;
+            /*hasData = true;
             firstName = Request.Form["firstname"];
             lastName = Request.Form["lastname"];
-            message = Request.Form["message"];
+            message = Request.Form["message"];*/
         }
     }
 }

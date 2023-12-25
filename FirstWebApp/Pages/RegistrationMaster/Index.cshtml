@@ -1,0 +1,74 @@
+﻿@page
+@model FirstWebApp.Pages.RegistrationMaster.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Index</h3>
+<hr />
+<p>
+    <a asp-page="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Imie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Nazwisko)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Telefon)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Registration[0].Kurs)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Registration != null && Model.Registration.Any())
+        {
+
+            @foreach (var item in Model.Registration)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Imie)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nazwisko)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefon)
+                    </td>
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kurs)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+
+        }
+        else
+        {
+            <tr>
+                <td colspan ="4" class="text-center">Kursy niedostępne w bazie danych</td>
+            </tr>    
+        }
+    </tbody>
+</table>
