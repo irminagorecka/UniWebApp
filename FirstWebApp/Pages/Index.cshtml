@@ -3,12 +3,44 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<!DOCTYPE html>
+<html lang="en">
 
-<section class="jumpers o_nas kontener">
-    <div class="row">
-        <div class="col-12 text-center mt-3">
-            <h2 class="h text-secondary naglowek" id="o_mnie">O mnie</h2>
-            <div class="border-bottom mb-3"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Example</title>
+    <!--linki do zmiany tekstu-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&amp;subset=latin-ext">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      
+
+    <style>
+        
+        .jumbotron {
+            background-image: url('images/jumbotron.jpg');
+            background-size: cover;
+            padding-right: 50px;
+        }
+        .jumbotron p {
+        margin-right: 250px; 
+    }
+   
+       
+    </style>
+</head>
+
+<body>
+<section>
+    
+        <div class="col-12 mt-3 text-center">
+            <h2 class="h text-secondary text-center naglowek" id="o_mnie">O mnie</h2>
+<hr />
             <p>
                 Jestem dyplomowanym Technikiem masażystą oraz ukończyłam szkolenia
                 z zakresu masaży twarzy takie jak: Japoński masaż liftingujący,
@@ -21,8 +53,8 @@
                 olejkami, świecą i wiele innych.
             </p>
         </div>
-    </div>
     <div class="border-bottom mb-3"></div>
+
     <!-- Gallery -->
     <div class="row">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -60,3 +92,17 @@
         </div>
     </div>
 </section>
+<div class="jumbotron">
+    <h1>Poznaj ofertę szkoleniową!</h1>
+        <p>
+            Dbając o kompleksowe podejście do nauczania technik masażu oferujemy Pakiety Szkoleniowe dla wszystkich rozpoczynających przygodę z masażem oraz dla tych, którzy chcieliby rozszerzyć swoją ofertę. Kursy masażu dla każdego  są skonstruowane tak, aby, jak najlepiej odpowiadać na potrzeby kursantów.
+        </p>
+           <p> Wybierz szkolenie, które Cię interesuje.
+        </p>
+
+    <p><a class="btn btn-dark btn-lg" href="Szkolenia" role="button">Szkolenia</a></p>
+</div>
+
+</body>
+
+</html>

@@ -3,10 +3,25 @@
 @{
 }
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
 <style>
     .card-img-top {
         width: 100%;
-        height: 200px;
+        height: 185px;
     }
 </style>
 
@@ -22,49 +37,207 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <div class="card h-100" style="width: 18rem;">
-                        <img src="~/images/taping-twarzy.jpg" class="card-img-top" alt="...">
+                    <div class="card h-100" style="width: 17rem;">
+                        <img src="~/images/taping.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Kinesiotaping liftingujący twarzy</h5>
-                            <p class="card-text">Kinesiotaping liftingujący twarzy to metoda plastrowania twarzy za pomocą specjalnych, elastycznych taśm kinezjologicznych. Nakleja się je na twarz, żeby zwiększyć odżywienie i napięcie skóry oraz zmniejszyć zmarszczki mimiczne.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <p class="card-text">Kinesiotaping liftingujący twarzy to metoda plastrowania twarzy za pomocą specjalnych, elastycznych taśm kinezjologicznych. Nakleja się je na twarz, żeby zwiększyć odżywienie i napięcie skóry oraz zmniejszyć zmarszczki mimiczne.</p>
+                            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                                Pokaż szczegóły
+                            </button>
+
                         </div>
                     </div>
                 </div>
 
+                   
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Kinesiotaping liftingujący twarzy</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Taping twarzy to technika rozluźniania mięśni przy pomocy
+                                        specjalnych taśm do kinesiotapingu. Ich celem jest relaksacja
+                                        spiętych mięśni i wygładzenie zmarszczek.To terapia powięziowa,
+                                        która polega na czasowym oklejeniu twarzy taśmami do
+                                        kinesiotapingu. Ich zadanie to też obniżenie napięcia
+                                        powierzchniowego, rozluźnienie mięśni i przywróceniu skórze
+                                        elastyczności. Dokladniej: podnoszą owal twarzy, redukują drugi
+                                        podbródek, lwią zmarszczkę i bruzdy nosowo-wargowe, wspomagając
+                                        pracę mięśni i przywracając im odpowiedni tonus. Umożliwiają
+                                        lepsze dotlenienienie tkanek, poprawe mikrokrążenie krwi i
+                                        przepływ limfy a więc usuwają obrzęki i zasinienia.
+                                    </p>
+                                    <p>Cena: 499zł</p>
+                                    <p>Termin: 10.01.2024 - 12.01.2024</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                                    <p><a class="btn btn-dark" href="RegistrationMaster/Create" role="button">Formularz zapisu</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <div class="card h-100" style="width: 18rem;">
+                    <div class="card h-100" style="width: 17rem;">
                         <img src="~/images/masaz_terapeutyczny.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Masaż klasyczny z technikami orientalnymi</h5>
                             <p class="card-text">Polegający na nauce klasycznych zabiegów z wykorzystaniem technik orientalnych. Obejmuje m.in. szkolenie z masażu stemplami Churna Pinda Sweda. Uczy podstaw konsultingu SPA i przygotowuje do profesjonalnej pracy jako masażysta.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal2">
+                                    Pokaż szczegóły
+                                </button>
                         </div>
                     </div>
                 </div>
 
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Masaż klasyczny z technikami orientalnymi</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Masaż klasyczny należy do najpopularniejszych zabiegów z zakresu medycyny naturalnej. Opiera się na wielowiekowym doświadczeniu i mądrości tych, którzy dbali o ludzkie zdrowie. Dziś kojarzony jest nie tylko z medycyną, ale i kosmetyką.
+
+                                        Oprócz działania przeciwbólowego i regeneracyjnego, masaż poprawia wygląd skóry i może pomóc zrzucić zbędne kilogramy. Ponadto pozwala zniwelować napięcie i stres, co poprawia zarówno kondycję fizyczną, jak i psychiczną.
+
+                                        Kurs masażu klasycznego w Akademii Masażu Karuna to nie tylko zdobywanie wiedzy o ludzkim ciele i technikach masażu. To przede wszystkim możliwość praktycznego zastosowania tej wiedzy pod czujnym okiem doświadczonej kadry. Każdy, kto zdecyduje się na szkolenie pozna najskuteczniejsze sposoby masowania oraz kryteria ich indywidualnego doboru, w zależności od potrzeb osoby leżącej na stole do masażu.
+
+                                        Dzięki poznaniu rozmaitych technik i chwytów, nasi kursanci mogą efektywnie, i  co najważniejsze, bezpiecznie uwolnić siebie i innych od uciążliwego napięcia mięśni, bólu, a także poprawić ukrwienie tkanek. W rezultacie osoba, która poddaje się takim masażom będzie zrelaksowana i stopniowo oczyści swój organizm z toksyn.
+
+                                        Zajęcia prowadzone są przez osoby z wieloletnim doświadczeniem. Dzięki konsultacjom udzielanym przez osoby, które prowadzą własne gabinety masażu i odnowy biologicznej, dowiesz się, w jaki sposób wykorzystać zdobyte umiejętności, aby osiągnąć sukces?
+
+                                        Na masaż klasyczny składa się wiele technik i chwytów. Jego najważniejszym celem jest rozluźnienie nadmiernie napiętych mięśni i usprawnienie krążenia krwi, czyli polepszenie ukrwienia tkanek, co oczyszcza je z toksyn, dotlenia, odżywia i niweluje dolegliwości bólowe. Właściwie wykonany, przy użyciu odpowiednich olejków, może zdziałać cuda. Wykorzystuje się go w profilaktyce i regeneracji.
+
+                                        Jest to równocześnie przyjemna i niezwykle głęboka metoda relaksu, jak i terapeutyczna praca z ciałem. Natężenie docisku dostosowuje się indywidualnie do danego Klienta, gdyż masaż klasyczny przebiegać bezboleśnie. Mylne przeświadczenie, że masaż musi boleć wywołuje dużo szkody, co mija się z celem terapeuty.
+                                    </p>
+                                    <p>Cena: 999zł</p>
+                                    <p>Termin: 10.03.2024 - 18.03.2024</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                                    <p><a class="btn btn-dark" href="RegistrationMaster/Create" role="button">Formularz zapisu</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <div class="card h-100" style="width: 18rem;">
+                    <div class="card h-100" style="width: 17rem;">
                         <img src="~/images/tajskijpg.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Masaż tajski</h5>
                             <p class="card-text">Głęboki łączący techniki akupresury, pasywną jogę, stretching i refleksologię. Wykonywany jest w ubraniu, na macie. Masażysta do zabiegu używa dłoni, przedramion, łokci i stóp. Potocznie masaż tajski nazywany jest "jogą dla leniwych". Skupia się na masowaniu głównych meridian.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal3">
+                                    Pokaż szczegóły
+                                </button>
                         </div>
                     </div>
                 </div>
 
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Masaż tajski</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Kurs masażu tajskiego to świetna okazja do rozszerzenia swoich umiejętności i kompetencji. Tradycyjny masaż tajski jest techniką tzw. głębokiego masażu, a równocześnie skuteczną metodą terapii manualnej sięgający swoją tradycją ponad 2500 lat. To kompilacja akupresury ważniejszych punktów na ciele człowieka z elementami pasywnej jogi, strechingu i refleksologii.
+
+                                        Głównym celem masażu tajskiego jest rozciągnięcie i rozluźnienie mięśni, więzadeł, stawów, torebek stawowych, powięzi. Pracuje się na głównych meridianach, czyli liniach energetycznych naszego ciała.
+
+                                        Masaż tajski zwany inaczej „jogą dla leniwych”, wykonuje się w ubraniu, na macie. Masażysta oprócz dłoni używa przedramion, łokci i stóp. W trakcie kursu masażu tajskiego uczymy, w jaki sposób wpłynąć na poprawę kondycji fizycznej, psychicznej i intelektualnej Klientów.
+                                    </p>
+                                    <p>Cena: 1099zł</p>
+                                    <p>Termin: 22.02.2024 - 01.03.2024</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                                    <p><a class="btn btn-dark" href="RegistrationMaster/Create" role="button">Formularz zapisu</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <div class="card h-100" style="width: 18rem;">
+                    <div class="card h-100" style="width: 17rem;">
                         <img src="~/images/masaz-twarz.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Masaż twarzy Mukabhyanga</h5>
                             <p class="card-text">
-                                Kursy masażu twarzy, szyi i dekoltu. Do zabiegu wykorzystuje się naturalne oleje i tradycyjne ajuwerdyjskie kosmetyki. Masaż ma na celu połączenie ciała i ducha dzięki stymulowaniu "marma", czyli miejsc, w których łączą się obie te strefy. Mukabhyanga dodaje skórze świeżości i usuwa ślady zmęczenia. Działa relaksująco zarówno na ciało, jak i na umysł.
+                                Kursy masażu twarzy, szyi i dekoltu. Do zabiegu wykorzystuje się naturalne oleje i tradycyjne ajuwerdyjskie kosmetyki. Masaż ma na celu połączenie ciała i ducha dzięki stymulowaniu "marma", czyli miejsc, w których łączą się obie te strefy.
                             </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal4">
+                                    Pokaż szczegóły
+                                </button>
                         </div>
                     </div>
                 </div>
 
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Masaż twarzy Mukabhyanga</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Mukabhyanga to pobudzający i rewitalizujący zabieg o działaniu oczyszczającym i peelingującym, który obejmuje twarz, szyję oraz dekolt. Do masażu twarzy Mukabhyanga używa się naturalnych olei oraz kosmetyków wykonanych według tradycyjnych ajurwedyjskich receptur.
+
+                                        Kurs masażu twarzy Mukabhyanga to specjalny program szkoleniowy, który zapewnia profesjonalne przygotowanie do wykonywania jednego z najpopularniejszych masaży ajurwedyjskich. Ponieważ sama nazwa brzmi nieco tajemniczo, warto przyjrzeć się bliżej technice Marma Mukabhyanga.
+
+                                        Tradycja ajurwedyjska opiera się na przekonaniu o połączeniu ciała i ducha. Miejsca na ciele, w których łączą się ze sobą obie sfery, nazywane są „marma”.
+
+                                        Masaż Marma Mukabhyanga opiera się na stymulowaniu właśnie tych punktów w obrębie twarzy, szyi i dekoltu. Dzięki odpowiednim czynnościom, wykonywanym w ściśle określonej kolejności, można skutecznie poprawić kondycję ciała i ducha jednocześnie. W efekcie skóra nabiera świeżości i promienieje, znikają ślady zmęczenia i stresu. W rezultacie twarz, szyja i dekolt wyglądają młodziej. Nie ma wątpliwości, że taki efekt przekłada się na większy optymizm i pewność siebie – nie tylko wśród kobiet.
+
+                                    </p>
+                                    <p>Cena: 669zł</p>
+                                    <p>Termin: 07.05.2024 - 12.05.2024</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                                    <p><a class="btn btn-dark" href="RegistrationMaster/Create" role="button">Formularz zapisu</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
             </div>
+
+          
+</body>
+
+</html>
